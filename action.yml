@@ -173,7 +173,7 @@ runs:
         destination: generic/platform=iOS
         configuration: ${{ inputs.configuration }}
     - name: Get App Store Connect API Key
-      uses: timheuer/base64-to-file@v1.1
+      uses: timheuer/base64-to-file@v1.2
       with:
         fileName: AuthKey_${{ inputs.auth-key-id }}.p8
         fileDir: ${{ github.workspace }}/private_keys
