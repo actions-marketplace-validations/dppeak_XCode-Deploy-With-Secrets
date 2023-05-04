@@ -161,7 +161,7 @@ runs:
         echo "[XCode-Deploy-With-Secrets]: Writing secrets to file..."
         echo ${{ inputs.json-for-secrets }} >> ${{ inputs.path-to-secrets }}
     - name: Build and Archive
-      uses: sersoft-gmbh/xcodebuild-action@v2
+      uses: sersoft-gmbh/xcodebuild-action@v2.0.1
       with:
         action: archive
         ${{ env.TYPE }}: ${{ env.FILE_TO_BUILD }}
